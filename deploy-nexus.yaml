@@ -32,8 +32,15 @@
         pattern: "nexus-*"
         file_type: directory
       register: find_result
+    - name: Check nexus folder stats
+      stat:
+        path: /opt/nexus
+      register: stat_result
     - name: Rename nexus folder
       shell: mv {{find_result.files[0].path}} /opt/nexus
+      when: not stat_result.stat.exists
+
+
 
 
 
