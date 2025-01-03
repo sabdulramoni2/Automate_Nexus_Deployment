@@ -1,1 +1,1 @@
-178.128.146.37 ansible_ssh_private_key_file=/root/.ssh/id_ed25519 ansible_user=root
+161.35.104.73 ansible_ssh_private_key_file=/root/.ssh/id_ed25519 ansible_user=root
