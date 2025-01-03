@@ -32,6 +32,8 @@
         pattern: "nexus-*"
         file_type: directory
       register: find_result
-    - debug: msg={{find_result}}
+    - name: Rename nexus folder
+      shell: mv {{find_result.files[0].path}} /opt/nexus
+
 
 
