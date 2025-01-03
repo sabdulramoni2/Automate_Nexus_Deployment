@@ -20,3 +20,9 @@
       get_url:
         url: https://download.sonatype.com/nexus/3/latest-unix.tar.gz
         dest: /opt/
+    - name: Untar Nexus installer
+      unarchive:
+        src: /opt/nexus-3.75.1-01-unix.tar.gz
+        dest: /opt/
+        remote_src: yes
+
