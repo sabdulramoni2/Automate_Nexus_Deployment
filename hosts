@@ -1,1 +1,2 @@
+[nexus_server]
 134.122.30.252 ansible_ssh_private_key_file=/root/.ssh/id_ed25519 ansible_user=root
